@@ -17,10 +17,10 @@ function uploadSubmitHandler(){if(state.fileBatch.length!==0){var data=new FormD
                                     s += res.data[i];
                                     s += '\n\n'
                                 }
-                                tips.info({
+                                /*tips.info({
                                     title: 'info',
                                     message: '请耐心等待几分钟使链接生效哦~'
-                                });
+                                });*/
                                 tips.success({
                                     title: 'success',
                                     message: '生成链接成功！！'
