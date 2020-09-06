@@ -45,10 +45,10 @@ function select(){
 (function(){
     var options = {};
     $('.js-uploader__box').uploader({
-    	'selectButtonCopy':'请选择或拖拽文件',
-    	'instructionsCopy':'你可以选择或拖拽多个文件',
-    	'submitButtonCopy':'上传选择的文件',
-    	'furtherInstructionsCopy':'你可以选择或拖拽更多的文件',
-    	'secondarySelectButtonCopy':'选择更多的文件'
+    	'selectButtonCopy': ((page.tran.getLang() == 'zh')?'请选择或拖拽文件':'Please select or drag and drop files'),
+    	'instructionsCopy': ((page.tran.getLang() == 'zh')?'你可以选择或拖拽多个文件':'You can select or drag multiple files'),
+    	'submitButtonCopy': ((page.tran.getLang() == 'zh')?'上传选择的文件':'Upload selected file'),
+    	'furtherInstructionsCopy': ((page.tran.getLang() == 'zh')?'你可以选择或拖拽更多的文件':'You can select or drag and drop more files'),
+    	'secondarySelectButtonCopy':((page.tran.getLang() == 'zh')?'选择更多的文件':'Select more files')
     });
 }());
